@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+            <title>http://avon.cs.nott.ac.uk/~efysr3/first.html</title>
+            <LINK REL ='stylesheet' TYPE='text/css' HREF='dbicw.css'>
+            <script src ="dbicw.js"></script>
+            <style>h1{text-align: center;} </style>
+    </head>
+
+<body>
+            <h1>DBI CW Movies and Actors</h1>
+            <h2>Search Database</h2>
+
+            <form action = "SearchMovie.php" onSubmit ="return validate(this)">
+                    Movie Title:<br>
+                    <input type ="text" name="title">
+                    <br><br>
+                    <input type = "submit" value="Search">   
+            
+            </form>
+
+            <form action = "SearchActor.php" onSubmit ="return validate(this)">        
+                    Actor Name:<br>
+                    <input type ="text" name="actname">
+                    <br><br>
+                    <input type = "submit" value="Search">   
+            
+            </form>
+
+      
+            <h2>Add Movie</h2>
+            <form action="AddMovie.php" method="post">
+                    <p>
+                        <label>Movie ID:</label>
+                        <input type="text" name="mvID" >
+                    </p>
+                    <p>
+                        <label>Act ID:</label>
+                        <input type="text" name="actID">
+                    </p>
+                    <p>
+                        <label>Movie Title:</label>
+                        <input type="text" name="mvTitle">
+                    </p>
+                    <p>
+                        <label>Movie Genre:</label>
+                        <input type="text" name="mvGenre">
+                    </p>
+                    <p>
+                        <label>Movie Price:</label>
+                        <input type="text" name="mvPrice" >
+                    </p>
+                    <p>
+                        <label>Movie Year:</label>
+                        <input type="text" name="mvYear">
+                    </p>
+                    <input type = "submit" value="Insert">
+                </form>
+
+            <h2>Add Actor</h2>
+            <form action="AddActor.php" method="post">
+                    <p>
+                        <label>Actor ID:</label>
+                        <input type="text" name="actID" >
+                    </p>
+                    <p>
+                        <label>Actor Name:</label>
+                        <input type="text" name="actName">
+                    </p>
+                    <input type = "submit" value="Insert">
+                </form>
+
+            <h2>Delete Movie</h2>
+            <form action = "DeleteMovie.php" method="post">
+                    Movie Title:<br>
+                    <input type ="text" name="mvTitle">
+                    <br><br>
+                    <input type = "submit" value="Delete">   
+            
+            </form>
+
+            <h2>Delete Actor</h2>
+            <form action = "DeleteActor.php" method="post">
+                    Actor Name:<br>
+                    <input type ="text" name="actName">
+                    <br><br>
+                    <input type = "submit" value="Delete">   
+            
+            </form>
+
+             
+</body>
+
+</html>
+  
+                      

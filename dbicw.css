@@ -1,0 +1,30 @@
+body{ 
+        font-family: calibri, arial, verdana, serif;
+        font-weight: normal;
+        font-size: 12pt;
+        background-color: rgb(231, 124, 124);
+    
+}
+
+h1 {
+        color: blue;
+        font-size: 30pt;
+       
+}
+
+h2 {
+        font-size: 13pt;
+}
+
+p{
+         font-family: "Times New Roman", Times, serif;
+      }
+
+input [type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+}
+
+
